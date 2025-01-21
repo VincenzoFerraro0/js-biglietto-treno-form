@@ -39,9 +39,47 @@
                     </select>
                 </div>
             </div>
-            <button id="bottone" type="button">Genera</button>
+            <div class="row">
+                <button class="btn" id="bottone" type="button" name="bottone">Genera</button>
+                <button class="btn" id="annulla" type="button" name="annulla">Annulla</button>
+            </div>
+            
         </div>
     </div>
+    <section class="biglietto">
+        <h2 class="title">Il tuo biglietto</h2>
+        <div id="biglietto" class="hidden">
+            <h2>dettagli passeggero</h2>
+            <div class="dai">
+                <div class="nome">
+                    <h2>nome passeggero <span id="eta"></span></h2>
+                    <h3 id="nome-passeggero"></h3>
+                </div>
+                <div class="offerta">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Offerta</th>
+                                <th>Carrozza</th>
+                                <th>Codice Cp</th>
+                                <th>Costo biglietto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span id="offerta-applicata"></span></td>
+                                <td><span id="carrozza"></span></td>
+                                <td><span id="codice-cp"></span></td>
+                                <td><span id="costo"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
 
     <script src="./main.js"></script>
 </body>
