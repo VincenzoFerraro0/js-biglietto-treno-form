@@ -4,21 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
 
     <!-- RESET CSS -->
-    <link rel="stylesheet" href="./css/reset.css">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
 
     <!-- DEBUG CSS -->
     <!-- <link rel="stylesheet" href="./css/debug.css"> -->
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <title>Calcolo prezzo biglietto</title>
 
 </head>
 
 <body>
+    <div class="wrapper">
+        <div class="dati-input">
+            <div class="row">
+                <div class="col">
+                    <label for="nome">Nome Cognome</label>
+                    <input id="nome" type="text" name="nome" placeholder="Inserisci Nome...">
+                </div>
+                <div class="col">
+                    <label for="km">Km da percorrere</label>
+                    <input id="km" type="number" name="km" placeholder="Inserisci km...">
+                </div>
+                <div class="col">
+                    <label for="eta">Fascia d'età</label>
+                    <select name="eta" id="fascia-eta">
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="over65">Over65</option>
+                    </select>
+                </div>
+            </div>
+            <button id="bottone" type="button">Genera</button>
+        </div>
+    </div>
 
+    <script src="./main.js"></script>
 </body>
 
 </html>
