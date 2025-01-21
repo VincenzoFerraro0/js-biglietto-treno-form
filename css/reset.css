@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
     
 }
 a {
@@ -15,3 +16,4 @@ img {
     display: block;
     width: 100%;
 }
+
